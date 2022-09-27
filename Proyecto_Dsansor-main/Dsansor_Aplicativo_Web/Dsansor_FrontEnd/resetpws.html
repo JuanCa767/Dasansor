@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Normalizacion-->
+	<link rel="stylesheet" href="./css/normalize.css" type="text/css" >
+    <link rel="stylesheet" href="./css/login.css" tipy="text/css">
+    <link rel="icon" href=".//Imagenes/logo/fa.ico">
+	<title>cambio contraseña</title>
+</head>
+<body>
+	<header>
+        <div class="conte_img">
+            <a href="index.html"><img src="./Imagenes/logo/Logo4.jpeg" alt="" width="180px;"></a>
+        </div>
+        <div class="conte_menu">
+            <nav class="menu">
+                <ul class="menu__lista"> 
+                    <li> <a class="active" href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="contenedor">
+        <img  src="./Imagenes/logo/Logo2.jpg" width="170px;"/><br>
+        <h3>¿Desea cambiar su contraseña?</h3>
+        <p>Llene los siguientes campos</p>
+        <label for="">La contraseña debe contener 8 o más caracteres, al menos un número, una letra mayúscula y letra minúscula</label>
+        <form id="forma" name="forma" method="post">
+
+            <div class="elemento">
+                <input type="password" id="oldpw" name="oldpw" 
+                placeholder ="Ingrese su contraseña actual *" 
+                required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />
+            </div>
+            
+            <div class="elemento">
+                <input type="password" id="newpw" name="newpw" 
+                placeholder ="Ingrese su nueva contraseña *" 
+                required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"/>
+            </div>
+            
+            <div class="elemento">
+                <input type="password" id="confirmpw"  name="confirmpw" 
+                placeholder ="Repita la nueva contraseña *" 
+                required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />
+            </div>
+            
+            <div class="elemento-boton">
+                <button id="btn__cambioClave" class="buton" type="submit">Cambiar contraseña</button>
+            </div>
+            <div class="panel">
+                <p><a id="" href="login.html">Regresa al panel</a></p>                
+            </div>
+        </form>
+    </div>
+
+
+    <footer>
+        <div>
+            <p class="footer">
+                Grupo 1 Ruta 2 Ciclo 3 UTP, Derechos reservados &copy; 2022
+            </p>
+        </div>
+    </footer>
+    <script src="./js/reset.js"></script>
+</body>
+</html>

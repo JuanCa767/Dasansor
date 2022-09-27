@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Normalizacion-->
+	<link rel="stylesheet" href="./css/normalize.css" type="text/css" >
+    <link rel="stylesheet" href="./css/login.css" tipy="text/css">
+    <link rel="icon" href=".//Imagenes/logo/fa.ico">
+    <title>Login</title>    
+</head>
+
+<body>
+    <header>
+        <div class="conte_img">
+            <a href="index.html"><img src="./Imagenes/logo/Logo4.jpeg" alt="" 
+                width="180px;"></a>
+        </div>
+        <div class="conte_menu">
+            <nav class="menu">
+                <ul class="menu__lista">     
+                     <li> <a class="active" href="index.html">Inicio</a></li>
+                     <li><a href="servicios.html">Servicios</a></li>
+                     <li><a href="contacto.html">Contacto</a></li>
+                     <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="contenedor">
+        <img  src="./Imagenes/logo/Logo2.jpg" width="170px;"/><br>
+        <h2>Iniciar Sesión</h2>
+        <form id="forma" class="forma" name="forma" action="formulario.html" method="post">
+            <!-- Usuario -->
+            <div class="elemento">
+                <input type="text"  id="user" name="user" placeholder="Usuario *" 
+                required  />
+            </div>
+            <!-- Clave -->
+            <div class="elemento">
+                <input type="password" id="password" name="password" placeholder ="Contraseña *" required pattern=".{4,}"/>
+            </div>
+            <!-- BOTON -->
+            <div class="elemento-boton">
+                
+                <button onclick="verificarClave()" id="btn__iniciar-sesion"  type="submit">Iniciar sesión</button>
+            </div>
+            <!-- referencias a otras paginas -->
+            <div class="registro">
+                <p><a id="" href="registro.html">Regístrarse</a></p>                
+            </div>
+            <div class="reset">
+                <p><a id="" href="resetpws.html">Cambio de contraseña</a></p>                
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div>
+            <p class="footer">
+                Grupo 1 Ruta 2 Ciclo 3 UTP, Derechos reservados &copy; 2022
+            </p>
+        </div>
+    </footer>
+    <script src="./js/login.js"></script>
+</body>
+</html>

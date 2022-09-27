@@ -1,0 +1,155 @@
+*{
+    font-family: Tahoma;
+	color: #000080;
+
+}
+html{
+    height: 100%;
+}
+
+body{
+	margin: 0;
+    padding: 0;
+	background-color: #DDD4D4;
+}
+/*Configuracion general del header*/
+header{
+	width: 100%;
+	display: flex;
+	background-color: white;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.conte_img{
+	margin-left: 70px;
+}
+
+.conte_menu{
+    margin: 15px;
+    padding-right: 50px;
+
+}
+
+.menu__lista{
+    float: right;
+    border-radius: 15px;
+	list-style-type: none;
+  	margin: 5px;
+  	padding: 0;
+  	overflow: hidden;
+  	background-color:#102063;
+}
+
+.menu__lista li{
+    padding: 0;
+	float:left;
+}
+
+.menu__lista li a{
+	display: block;
+  	color: white;
+  	text-align: center;
+  	padding: 20px;
+  	text-decoration: none;
+    
+}
+/*Cambiar color de fondo y color de letra*/
+.menu__lista li a:hover{
+	border: 1px solid #111654;
+	border-radius: 10px;
+    background-color: white;
+    color: #0B0E32;
+}
+
+/*Cuerpo*/
+
+h1{
+	margin:30px;
+	text-align: center;	
+	background: white;
+	border: 1px solid #111654;
+	border-radius: 10px;
+	box-shadow: 7px 13px 37px #000;
+}
+
+#demo{
+	width: 70%;
+	display: inline;
+	justify-content: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+/*contenedor principal */
+.section{
+	display: flex;
+	margin: 25px;
+	padding-top: 10px;
+	background: #DDD4D4;
+	border-radius: 10px;
+}
+
+.texto .texto1 .texto2{
+	display: inline-block;
+	border-radius: 10px solid;
+	
+}
+
+.texto{
+	margin: 15px;
+	width: 1300px;
+	background: white;
+	border: 1px solid #111654;
+	border-radius: 10px;
+	box-shadow: 7px 13px 37px #000;
+}
+
+.texto1{
+	margin: 15px;
+	width: 600px;
+	background: white;
+	border: 1px solid #111654;
+	border-radius: 10px;
+	box-shadow: 7px 13px 37px #000;
+	
+}
+
+.texto2{
+	margin: 15px;
+	width: 700px;
+	border: 1px solid #111654;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 7px 13px 37px #000;
+}
+
+.elemento-boton{
+	display: flex;	
+	justify-content: center;
+
+}
+.buton{	
+	margin: 10px;
+	text-align: center;
+	font-size: 30px;
+	background-color: #102063;
+	padding: 5px;
+	justify-content: center;
+	color: white;
+	border-radius: 6px;
+    border-bottom: 2px;
+}
+
+.parrafo{
+	text-align: justify;
+	padding: 10px;
+}
+
+
+.footer{
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px 20px;
+    overflow: hidden;
+}
